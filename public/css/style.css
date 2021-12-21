@@ -1,0 +1,351 @@
+html, body {
+    height: 100%;
+    margin: 5px;
+    display: flex;
+    flex-direction: column;
+}
+
+/*  MENU */
+nav {
+    display: flex;
+    margin-bottom: 10px;
+    font-size: 150%;
+}
+
+nav ul li a:hover {
+    background-color: #66a9da;
+}
+
+/* CUERPO */
+main {
+    display: flex;
+    /* Centrar imagen */
+    width: 1400px;
+    /* Menor que ancho de imagen para dejar borde blanco */
+    margin: 0 auto;
+}
+
+/* Caja principal */
+.cajaPrincipal {
+    border: 2px solid #af930e;
+    padding-bottom: 100px;
+    min-height: 1150px;
+    min-width: 1170px;
+}
+
+.cajaPrincipal h1 {
+    background-color: #f1f1f1;
+    padding: 10px;
+}
+
+a {
+    color: black;
+}
+
+a:hover {
+    color: #152733;
+}
+
+/* FOOTER */
+footer {
+    display: flex;
+    margin-top: 10px;
+    padding: 5px 10px 5px 10px;
+    justify-content: space-around;
+}
+
+footer .mapa a {
+    text-decoration: none;
+}
+
+footer .mapa a:hover {
+    text-decoration: underline;
+}
+
+footer .redes {
+    display: flex;
+}
+
+footer .redes .red {
+    margin: auto 30px auto 30px;
+}
+
+/* HOME */
+.elementos-portada {
+    background-color: white;
+}
+
+
+/* Color de fondo común a elementos */
+.fondo-claro {
+    background: #e0ecf4;
+}
+
+/* IMÁGENES */
+.foto_perfil {
+    width: 150px;
+}
+
+#imagePreview img {
+    width: 150px;
+    margin: 10px;
+}
+
+.foto_perfil_menu {
+    height: 100%;
+}
+
+.foto_div_menu {
+    margin-top: 5px;
+    width: 45px;
+    height: 45px;
+    border-radius: 900px;
+    overflow: hidden;
+}
+
+.boton_abajo {
+    display: flex;
+    flex-direction: row-reverse;
+    margin: 10px;
+    margin-top: 60px;
+}
+
+/* MAPA INTERTACTIVO */
+#map {
+    width: 100%;
+    height: 580px;
+    box-shadow: 5px 5px 5px #888;
+}
+
+#select-location {
+    margin-top: 50px;
+    margin-bottom: 30px;
+    width: 200px;
+    font-size: 1rem;
+}
+
+/* Listados de tipo scroll */
+#resultados_usuarios, #resultados_tramites, #resultados_quejas, #configuracion_tramites {
+    height: 1000px;
+    overflow: scroll
+}
+
+/*  BOTÓN Modo noche  */
+.switch {
+    background: #343D5B;
+    border-radius: 1000px;
+    border: none;
+    position: relative;
+    cursor: pointer;
+    display: flex;
+    outline: none;
+}
+
+.switch span {
+    width: 25px;
+    height: 30px;
+    line-height: 30px;
+    display: block;
+    background: none;
+    color: #fff;
+}
+
+.switch::after {
+    content: "";
+    display: block;
+    width: 33px;
+    height: 33px;
+    position: absolute;
+    background: #F1F1F1;
+    top: 0;
+    left: 0;
+    right: unset;
+    border-radius: 100px;
+    transition: .3s ease all;
+    box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, .2);
+}
+
+.switch:active, .switch.active {
+    background: orange;
+    color: #000;
+}
+
+.switch:active::after, .switch.active::after {
+    right: 0;
+    left: unset;
+}
+
+/*  MODO NOCHE  */
+body.dark {
+    background: black;
+    color: white;
+}
+
+body.dark .fondo-claro {
+    background: #19284C;
+    color: white;
+}
+
+body.dark .cajaPrincipal h1 {
+    background-color: #19284C;
+    padding: 10px;
+    color: white;
+}
+
+body.dark .card {
+    background-color: #19284C;
+    color: white;
+}
+
+body.dark .card .fondo-claro {
+    background-color: #2271b0;
+    color: white;
+}
+
+body.dark .card-header {
+    background-color: #2271b0;
+    color: white;
+}
+
+body.dark .list-group-item {
+    background-color: #1f2021;
+    color: white;
+    border-color: #899097;
+}
+
+.elemento-n-e {
+    background-color:
+}
+
+body.dark .modal-content {
+    background-color: #1f2021;
+    color: white;
+}
+
+body.dark .card-tittle {
+    background-color: #2271b0;
+    color: white;
+}
+
+body.dark .card-noticia {
+    background-color: black;
+    color: white;
+}
+
+body.dark .card-comentario {
+    background-color: #2271b0;
+    color: white;
+}
+
+body.dark hr {
+    background-color: white;
+}
+
+body.dark input {
+    background-color: black;
+    color: white;
+}
+
+body.dark input:focus {
+    background-color: black;
+    color: white;
+}
+
+body.dark textarea {
+    background-color: black;
+    color: white;
+}
+
+body.dark .text-muted .nav-link {
+    color: #adb2b8;
+}
+
+body.dark .elementos-portada {
+    background-color: black;
+    color: white;
+}
+
+body.dark .elementos-portada p {
+    color: white;
+}
+
+body.dark .form-group label {
+    color: white;
+}
+
+body.dark #cke_1_top {
+    background-color: black;
+}
+
+body.dark #cke_1_bottom {
+    background-color: black;
+}
+
+/* Dispositivos de hasta 800px */
+@media screen and (max-device-width:800px) {
+    html, body {
+        height: fit-content;
+        margin: 1px;
+        display: flex;
+        width: 800px;
+    }
+
+    /*  MENU */
+    nav {
+        width: inherit;
+        margin-bottom: 10px;
+        font-size: 100%;
+
+    }
+
+    /* CUERPO */
+    main {
+        display: flex;
+        /* Centrar imagen */
+        width: fit-content;
+        height: auto;
+        flex-direction: column;
+        /* Menor que ancho de imagen para dejar borde blanco */
+        margin: 0 auto;
+    }
+
+    /* Disposición de elementos */
+    .cajaPrincipal {
+        border: 2px solid #af930e;
+        padding-bottom: 100px;
+        min-width: inherit;
+        width: 760px;
+    }
+
+    /* Menú */
+    .navbar-nav .btn{
+      margin: 10px;
+      max-width: 300px;
+    }
+
+    #boton_inicio{
+      margin-left: 13px;
+    }
+
+    /*  Elementos no presentados  */
+    .cuadros-entrada {
+        display: none;
+    }
+
+    .aside {
+        display: none;
+    }
+
+    #sntch_button, #sntch_webchat, #sntch_block, #enlaces, #numeros, #quejas {
+        display: none;
+    }
+
+    /* IMÁGENES */
+    .imagenes-lista img {
+        max-width: 100%;
+    }
+
+    .imagenes-lista {
+        min-height: 20px;
+    }
+}
