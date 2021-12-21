@@ -15,3 +15,15 @@ turismo, enlaces de interés o contacto.
 por la web. 
 
   Por otro lado, la web incluye todos los mecanismos necesarios para que la corporación gestione los trámites y las quejas de los usuarios, ası́ como la introducción y edición de noticias de actualidad y eventos.
+
+Se puede visitar la web en el siguiente enlace: [https://ayuntamientomarmolejo.herokuapp.com](https://ayuntamientomarmolejo.herokuapp.com).
+
+
+### Herramientas
+
+- HTML, CSS, PHP.
+- JavaScript.
+- Bootstrap.
+- Laravel.
+- MySQL.
+- Heroku.
